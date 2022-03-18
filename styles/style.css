@@ -382,6 +382,7 @@ footer h4 {
   justify-content: center;
   gap: 2em;
   overflow-x: scroll;
+  overflow-y: hidden;
   max-width: 850px;
   margin: auto;
 }
@@ -393,6 +394,7 @@ footer h4 {
 
 .post-container:hover {
   border: 1px solid #707070;
+  margin: -1px;
 }
 
 .about-subcontainer {
@@ -837,6 +839,57 @@ textarea {
 
 .post-detail-subcontainer figure {
   text-align: center;
+}
+
+.comment-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1000px;
+  padding: 10px;
+  margin: auto;
+  gap: 10px;
+}
+
+.comment-container textarea,
+.comment-container input {
+  align-self: center;
+}
+
+.comment-container button {
+  align-self: center;
+  padding: 0px 40px;
+  text-transform: uppercase;
+}
+
+.comment-error,
+.title-error {
+  display: none;
+}
+
+.comments {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+  margin-bottom: 5em;
+}
+
+.comment-wrapper {
+  width: 600px;
+  height: auto;
+  padding: 2em;
+  border: solid 2px #6a8b84;
+}
+
+.errorMsg {
+  text-align: center;
+  border: solid 2px darkred;
+  padding: 10px;
+  max-width: 400px;
+  margin: auto;
+  background-color: lightcoral;
+  color: black;
 }
 
 @media screen and (max-width: 992px) {

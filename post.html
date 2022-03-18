@@ -56,6 +56,20 @@
             <div class="post-detail-subcontainer"></div>
         </section>
 
+        <section class="comments">
+            <h3>Comments</h3>
+        </section>
+
+        <section>
+            <form action="" method="POST" class="comment-container">
+            <input type="text" id="comment-title" placeholder="Title">
+            <textarea type="text" id="comment-box" placeholder="Enter comment"></textarea>
+            <button id="postBtn" >Post</button>
+            <div class="title-error errorMsg">Please write a title, more than 5 characters</div>
+            <div class="comment-error errorMsg">Please write something, more than 16 characters</div>
+            </form>
+        </section>
+
         <section class="carousel">
             <h2>Latest post</h2>
             <div class="feature-collection-container"></div>
@@ -92,6 +106,8 @@
        </footer>
     <script src="js/component/latestPost.js"></script>
     <script src="js/post.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/comment.js"></script>
     <script src="js/component/menu.js"></script>
     <script src="js/script.js"></script>
 </body>
